@@ -1,0 +1,23 @@
+
+body, html {
+  background-color: #E8ECEF;
+  height: 100%;
+  margin: 0px;
+  width: 100%;
+}
+
+.centered {
+    height: 100%!important;
+    margin-top: -50px;
+    text-align: center;
+    display: flex;
+    place-content: center;
+    place-items: center;
+}
+
+.secret-text {
+  text-align: center;
+  font-size: 2rem;
+  color: #fff;
+  background-color: #000;
+}
