@@ -6,16 +6,21 @@ body, html {
   width: 100%;
 }
 
-.centered {
-    height: 100%!important;
-    margin-top: -50px;
-    text-align: center;
-    display: flex;
-    place-content: center;
-    place-items: center;
+/* .centered {
+  height: 100%!important;
+  text-align: center;
+} */
+.centered{
+  margin-top: -50px;
+  display: flex;
+  place-content: center;
+  place-items: center;
+  height: 100%!important;
+  text-align: center;
 }
 
 .secret-text {
+  display: block!important;
   text-align: center;
   font-size: 2rem;
   color: #fff;
