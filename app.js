@@ -12,13 +12,16 @@ const passport = require('passport');
 const passportLocalMongoose = require('passport-local-mongoose');
 const GoogleStrategy = require('passport-google-oauth20').Strategy;
 const findOrCreate = require('mongoose-findorcreate');
-
+const path = require("path");
 const app = express();
 
 
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static('public'));
+
 app.set('view engine', 'ejs');
+app.engine("ejs", require("ejs").__express);
+app.set("views", path.join(__dirname, "./views"));
 
 
 mongoose.connect('mongodb://localhost:27017/userDB');
