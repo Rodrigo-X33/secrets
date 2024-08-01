@@ -24,7 +24,7 @@ app.engine("ejs", require("ejs").__express);
 app.set("views", path.join(__dirname, "./views"));
 
 
-mongoose.connect('mongodb://localhost:27017/userDB');
+mongoose.connect('mongodb+srv://rodrigochacon:11b0Jwf4AdmCIXmr@cluster0.wg7ktnz.mongodb.net/userDB');
 
 app.use(session({
     secret: 'secret',
